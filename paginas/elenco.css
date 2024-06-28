@@ -6,7 +6,6 @@
 
 html, body {
     height: 100%;
-    width: 100%;
     font-family: 'Oswald', Arial, sans-serif;
     background-color: #000;
     color: #fff;
@@ -61,6 +60,12 @@ header {
     justify-content: space-between;
 }
 
+.nav-list li a.active {
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
 .nav-list li {
     position: relative;
 }
@@ -103,30 +108,6 @@ header {
 }
 
 /* MAIN DE LA PAGINA */
-.img-principal {
-    width: 75vw;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: auto;
-    object-fit: cover;
-}
-
-.img-principal img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
-}
-
-.img-principal h1 {
-    display: flex;
-    position: relative;
-    left: 550px;
-    bottom: 100px;
-    color: red;
-    margin-bottom: 0;
-    width: 220px;
-}
-
 .fade-in {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
@@ -136,110 +117,38 @@ header {
     opacity: 1;
 }
 
-.datos-serie {
-    background-color:#202020;
-    margin: 0 50px 50px 50px;
-    border-left: 2px solid red;
-    border-right: 2px solid red;
-    padding: 5px;
+.elenco {
+    display: block;
+    background-color: #1c1c1c;
+    margin: 40px 60px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 20px;
 }
 
-.datos-serie h2 {
-    padding: 10px;
-    margin: 0px;
-}
-
-.contenido {
+.conteiner-uno {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    width: 100%;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: end;
+    justify-content: center;
 }
 
-.primer-columna {
-    padding: 10px;
-    flex: 1;
+.conteiner-uno img {
+    margin: 20px 100px;
+    border: 1px solid red;
+    box-shadow: 0px 0px 0px rgba(15, 15, 15, .5);
 }
 
-.primer-columna p {
-    margin-bottom: 8px;
-    font-size: 28px;
-    flex: 1;
-}
-
-.highlighted {
-    color: red;
-}
-
-.segunda-columna {
-    padding: 10px;
-    justify-content: flex-end;
-    margin-right: 10px;
-}
-
-.segunda-columna img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
-    width: 250px;
-    border: 2px solid black;
-}
-
-.segunda-columna p {
-    margin: 5px 0 5px 0;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.sinopsis p {
-    margin-left: 10px;
-    margin-right: 10px;
+.uno p:not(.nombre-serie) {
+    display: flex;
+    justify-content: center;
     font-size: 26px;
+    margin-bottom: 0px;
 }
 
-.multimedia {
+.nombre-serie {
     display: flex;
-    position: relative;
     justify-content: center;
-    gap: 3rem;
-    padding: 10px;
-}
-
-.opening {
-    padding: 10px;
-}
-
-.multimedia p {
-    display: flex;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-}
-
-.foto-temporada img {
-    width: 450px;
-    height: 315px;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.foto-temporada p {
-    margin-top: 5px;
-}
-
-.emmy-foto img {
-    width: 480px;
-    height: 315px;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-.emmy-foto p {
-    margin-top: 5px;
+    font-size: 22px;
+    color: red;
 }
 
 /* FOOTER */
@@ -355,67 +264,38 @@ footer p {
     }
 
     /* MAIN RESPONSIVE */
-    .img-principal {
-        display: flex;
-        position: relative;
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+    }
+
+    .elenco {
+        margin: 20px 30px;
+    }
+
+    .conteiner-uno {
+        display: inline-block;
+        justify-content: flex-start;
+        margin-left: 65px;
+    }
+
+    .conteiner-uno img {
+        margin: 0px;
         width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin: 0;
+        margin-top: 10px;
     }
 
-    .img-principal h1 {
-        display: flex;
-        position: absolute;
-        left: 260px;
-        top: 310px;
+    .uno p:not(.nombre-serie) {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+
+    .nombre-serie {
         font-size: 20px;
-    }
-
-    .datos-serie {
-        margin: 0 25px 25px 25px;
-    }
-
-    .contenido {
-        display: block;
-    }
-
-    .datos-serie p {
-        font-size: 18px;
-    }
-
-    .segunda-columna {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-    }
-
-    .segunda-columna img {
-        width: 190px;
-        justify-content: space-between;
-    }
-
-    .segunda-columna p {
-        display: none;
-    }
-
-    .opening {
-        width: 400px;
-        height: 250px;
-    }
-
-    .multimedia p {
-        font-size: 14px;
-        padding-left: 25px;
-    }
-
-    .multimedia {
-        display: block;
-    }
-
-    .foto-temporada img, .emmy-foto img {
-        width: 400px;
-        height: 250px;
     }
 
     /* FOOTER RESPONSIVE */

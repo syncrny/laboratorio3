@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="icon" sizes="70x70" href="img/favicon_sopranos.webp">
+    <link rel="icon" sizes="70x70" href="/img/logos/favicon_sopranos.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/paginas/elenco.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
-                <img src="img/logos/sopranoLogo.png" alt="Logo">
+            <a href="/index.html">
+                <img src="/img/logos/sopranoLogo.png" alt="Logo">
             </a>
         </div>
         <button id="abrir-menu" class="abrir-menu">
@@ -35,62 +35,14 @@
                 <li><a href="/paginas/galeria.html">GALERIA</a></li>
                 <li><a href="/paginas/personajes.html">PERSONAJES</a></li>
                 <li><a href="/paginas/temporadas.html">TEMPORADAS</a></li>
-                <li><a href="/paginas/form.html">FORM</a></li>
+                <li><a href="/paginas/form.html" class="active">FORM</a></li>
             </ul>
         </nav>
     </header>
     <main class="fade-in">
         <!-- Contenido principal -->
         <div class="img-principal">
-            <img src="img/imagenes/soprano.webp">
-            <h1>SITIO OFICIAL</h1>
-        </div>
-        <div class="datos-serie">
-            <h2>SOBRE LA SERIE:</h2>
-            <div class="contenido">
-                <div class="primer-columna">
-                    <p><span class="highlighted">Título original:</span> The Sopranos ("Los Soprano" en Español)</p>
-                    <p><span class="highlighted">Género:</span> Drama - Crimen</p>
-                    <p><span class="highlighted">Creador y productor ejecutivo:</span> David Chase</p>
-                    <p><span class="highlighted">Directores Ejecutivos:</span> Robin Green, Ilene S. Landress, Terence Winter y Matthew Weiner</p>
-                    <p><span class="highlighted">Empresa productora:</span> Brillstein Entertainment</p>
-                    <p><span class="highlighted">Distribuidor:</span> Warner Bros. Television Distribution</p>
-                    <p><span class="highlighted">Medio de difusión:</span> HBO</p>
-                    <p><span class="highlighted">Primera emisión:</span> 10 de enero de 1999</p>
-                    <p><span class="highlighted">Ultima emisión:</span> 10 de junio de 2007</p>
-                    <p><span class="highlighted">N.° de temporadas:</span> 6</p>
-                    <p><span class="highlighted">N.° de episodios:</span> 86</p>
-                    <p><span class="highlighted">País de origen:</span> Estados Unidos</p>
-                </div>
-                <div class="segunda-columna">
-                    <img src="/img/imagenes/index/DavidChase.webp" alt="DavidChase">
-                    <p>David Chase. El creador de la serie.</p>
-                    <img src="/img/imagenes/index/hbo.webp" alt="HBO">
-                    <p>HBO. Medio de difusión de la serie</p>
-                </div>
-            </div>
-            <hr>
-            <div class="sinopsis">
-                <h2>SINOPSIS:</h2>
-                <p>The Sopranos es una serie de televisión estadounidense creada por David Chase. La serie se centra en Tony Soprano, un jefe de la mafia de Nueva Jersey, mientras intenta equilibrar su vida familiar y sus actividades criminales. A lo largo de la serie, se exploran temas como la identidad, la familia, la corrupción y la moralidad.</p>
-                <p>Tony Soprano, interpretado por James Gandolfini, es un hombre complejo que busca la ayuda de una psiquiatra, la Dra. Jennifer Melfi, para lidiar con los problemas de ansiedad y estrés que surgen de su doble vida. La serie ofrece una visión profunda y realista del mundo del crimen organizado, así como de las luchas internas de Tony con su papel de líder y padre de familia.</p>
-                <p>"The Sopranos" es conocida por su desarrollo de personajes, sus tramas entrelazadas y su enfoque en los detalles cotidianos de la vida mafiosa. La serie ha sido aclamada por la crítica y es considerada una de las mejores series de televisión de todos los tiempos, influyendo significativamente en el panorama de la televisión moderna.</p>
-            </div>
-            <hr>
-            <div class="multimedia">
-                <div class="foto-temporada">
-                    <img src="/img/imagenes/index/1262505600-story-highlight-1024x576.jpg" alt="">
-                    <p>Cover de la temporada tres. Año 2001.</p>
-                </div>
-                <div class="video-ytb">
-                    <iframe class="opening" width="480" height="315" src="https://www.youtube.com/embed/mJpNmYeooQE?si=W-5YzRIcocAEl39K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>El opening de la serie. La cual es la misma durante las seis temporadas.</p>
-                </div>
-                <div class="emmy-foto">
-                    <img src="/img/imagenes/index/the-sopranos-emmys-2007.webp" alt="">
-                    <p>James Gandolfini y Edie Falco con dos premios Emmy. Año 2007.</p>
-                </div>
-            </div>
+            <h1>ELENCO</h1>
         </div>
     </main>
     <footer>
@@ -118,11 +70,11 @@
             </div>
         </div>
     </footer>
-    <script src="menu.js"></script>
+    <script src="/menu.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.fade-in').classList.add('visible');
         });
-    </script>    
+    </script>  
 </body>
 </html>
