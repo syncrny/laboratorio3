@@ -128,6 +128,28 @@ header {
 
 .conteiner {
     display: flex;
+    margin: 30px 0;
+}
+
+.conteiner-dos {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+
+.sinopsis-dos {
+    margin-right: 20px;
+}
+
+.sinopsis-dos h2 {
+    text-align: end;
+    color: red;
+}
+
+.sinopsis-dos p {
+    flex: 1;
+    text-align: end;
+    font-size: 22px;
 }
 
 .sinopsis {
@@ -136,6 +158,11 @@ header {
 
 .sinopsis h2 {
     color: red;
+}
+
+.sinopsis p {
+    flex: 1;
+    font-size: 22px;
 }
 
 .foto img {
@@ -190,7 +217,7 @@ footer p {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
     /* HEADER RESPONSIVE */
     .abrir-menu, .cerrar-menu {
@@ -265,6 +292,49 @@ footer p {
     
     .fade-in.visible {
         opacity: 1;
+    }
+
+    .temporadas {
+        margin: 20px 30px;
+    }
+
+    .conteiner {
+        display: block;
+    }
+
+    .foto {
+        text-align: center;
+    }
+
+    .sinopsis, .sinopsis-dos {
+        margin-top: 20px;
+    }
+
+    .sinopsis h2 {
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .sinopsis p {
+        font-size: 18px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .conteiner-dos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sinopsis-dos h2 {
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .sinopsis-dos p {
+        font-size: 18px;
+        text-align: center;
+        margin-left: 20px;
     }
 
     /* FOOTER RESPONSIVE */
