@@ -117,6 +117,69 @@ header {
     opacity: 1;
 }
 
+.contacto {
+    display: block;
+    background-color: #1c1c1c;
+    margin: 40px 60px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 20px;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-header {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}
+
+button:hover {
+    background-color: red;
+}
 
 /* FOOTER */
 footer {
@@ -238,6 +301,10 @@ footer p {
     
     .fade-in.visible {
         opacity: 1;
+    }
+
+    .contacto {
+        margin: 20px 30px;
     }
 
     /* FOOTER RESPONSIVE */

@@ -102,6 +102,12 @@ header {
     color: red;
 }
 
+.nav-list li a.active {
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
 /* MAIN DE LA PAGINA */
 .img-principal {
     width: 75vw;
