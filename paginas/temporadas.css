@@ -117,6 +117,33 @@ header {
     opacity: 1;
 }
 
+.temporadas {
+    display: block;
+    background-color: #1c1c1c;
+    margin: 40px 60px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 20px;
+}
+
+.conteiner {
+    display: flex;
+}
+
+.sinopsis {
+    margin-left: 20px;
+}
+
+.sinopsis h2 {
+    color: red;
+}
+
+.foto img {
+    border: 1px solid white;
+    width: 280px;
+    height: 350px;
+}
+
 
 /* FOOTER */
 footer {
